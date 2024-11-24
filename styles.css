@@ -1,4 +1,4 @@
-/* Keyframes for drop from the top animation */
+
 @keyframes dropFromTop {
     0% {
         transform: translateY(-100%);
@@ -10,7 +10,6 @@
     }
 }
 
-/* Apply animation to the body and its children */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -26,17 +25,16 @@ body {
 
 main {
     text-align: center;
-    animation: dropFromTop 1.2s ease-out; /* Slight delay for main */
-}
+    animation: dropFromTop 1.2s ease-out; 
 
 h1 {
     font-size: 2.5rem;
-    animation: dropFromTop 1.4s ease-out; /* Slight delay for heading */
+    animation: dropFromTop 1.4s ease-out; 
 }
 
 .name {
     color: #ff79c6; /* Purple */
-    animation: dropFromTop 1.6s ease-out; /* Additional delay for name */
+    animation: dropFromTop 1.6s ease-out; 
 }
 
 .buttons {
@@ -58,12 +56,11 @@ h1 {
 .btn.pink { background-color: #ff4081; color: white; }
 .btn.blue { background-color: #03a9f4; color: white; }
 
-/* Popout effect on hover */
+
 .btn:hover {
-    transform: scale(1.2); /* Make the button larger */
-    box-shadow: 0px 4px 40px rgba(255, 147, 219, 0.4); /* Add a glowing shadow */
-    filter: brightness(1.2); /* Slightly brighten the button */
-}
+    transform: scale(1.2); 
+    box-shadow: 0px 4px 40px rgba(255, 147, 219, 0.4); 
+    filter: brightness(1.2); 
 
 
 .technologies p {
@@ -88,7 +85,6 @@ h1 {
     animation: dropFromTop 2.6s ease-out;
 }
 
-/* Gradient Text */
 .animated-gradient {
     background-image: -webkit-linear-gradient(125deg, #f2291b, #f7db25, #84f527);
     -webkit-background-clip: text;
