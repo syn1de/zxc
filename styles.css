@@ -1,0 +1,106 @@
+/* Keyframes for drop from the top animation */
+@keyframes dropFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animation to the body and its children */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: dropFromTop 1s ease-out;
+}
+
+main {
+    text-align: center;
+    animation: dropFromTop 1.2s ease-out; /* Slight delay for main */
+}
+
+h1 {
+    font-size: 2.5rem;
+    animation: dropFromTop 1.4s ease-out; /* Slight delay for heading */
+}
+
+.name {
+    color: #ff79c6; /* Purple */
+    animation: dropFromTop 1.6s ease-out; /* Additional delay for name */
+}
+
+.buttons {
+    margin: 20px 0;
+    animation: dropFromTop 1.8s ease-out;
+}
+
+.btn {
+    font-size: 1rem;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn.green { background-color: #4caf50; color: white; }
+.btn.pink { background-color: #ff4081; color: white; }
+.btn.blue { background-color: #03a9f4; color: white; }
+
+/* Popout effect on hover */
+.btn:hover {
+    transform: scale(1.2); /* Make the button larger */
+    box-shadow: 0px 4px 40px rgba(255, 147, 219, 0.4); /* Add a glowing shadow */
+    filter: brightness(1.2); /* Slightly brighten the button */
+}
+
+
+.technologies p {
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #888;
+    animation: dropFromTop 2.2s ease-out;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    animation: dropFromTop 2.4s ease-out;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+    animation: dropFromTop 2.6s ease-out;
+}
+
+/* Gradient Text */
+.animated-gradient {
+    background-image: -webkit-linear-gradient(125deg, #f2291b, #f7db25, #84f527);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 15s infinite linear;
+}
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}
